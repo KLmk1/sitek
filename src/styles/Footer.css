@@ -35,11 +35,11 @@ footer nav a {
     border: 1px solid transparent;
 }
 
-footer nav a:hover {
-    color: var(--background-color);
-    background-color: #630000;
+.footer-link {
+    color: #630000;
 }
 
-.footer-link {
-    color: #630000 !important;
+footer nav a:hover {
+    color: white !important;
+    background-color: #630000;
 }
