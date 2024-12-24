@@ -6,8 +6,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
