@@ -1,0 +1,85 @@
+:root {
+    --background-color: #fff;
+    --text-color: black;
+    --hover-color: #630000;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    box-shadow: 1px 3px 10px var(--shadow-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Логотип */
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    color: black;
+    flex-shrink: 0;
+}
+
+/* Навигация - горизонтально по умолчанию */
+header nav {
+    display: flex;
+    gap: 15px; /* Расстояние между ссылками */
+}
+
+header nav a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border: 1px solid transparent;
+}
+
+header nav a:hover {
+    color: var(--background-color);
+    background-color: var(--hover-color);
+}
+
+/* Адаптивность - таблица при уменьшении экрана */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Логотип сверху, ссылки снизу */
+        align-items: center;
+        padding: 15px;
+
+        position: static; /* Положение становится обычным */
+    }
+
+    header h1 {
+        margin-bottom: 15px;
+    }
+
+    header nav {
+        display: grid; /* Переход на таблицу */
+        grid-template-columns: repeat(2, 1fr); /* Две колонки */
+        gap: 10px;
+        width: 100%; /* Чтобы ссылки выровнялись */
+        justify-content: center;
+    }
+
+    header nav a {
+        font-size: 0.9rem;
+        padding: 10px;
+        border: 1px solid gray; /* Добавляем рамку только в мобильной версии */
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    header nav {
+        grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
+    }
+}

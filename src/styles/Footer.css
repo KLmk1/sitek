@@ -1,0 +1,35 @@
+/* Глобальные стили для body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Устанавливаем минимальную высоту на весь экран */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Контейнер для контента */
+.container {
+    flex: 1; /* Позволяет контейнеру занимать все доступное пространство */
+}
+
+/* Основные стили для футера */
+.footer {
+    padding: 20px;
+    color: #000;
+    text-align: center;
+    border-top: 2px solid #000;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* Ссылки в футере */
+.footer a {
+    color: #630000;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Эффект наведения на ссылки */
+.footer a:hover {
+    color: #003f66;
+}
