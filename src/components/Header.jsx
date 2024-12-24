@@ -17,7 +17,7 @@ const Header = () => {
             <nav className="navigation">
                 <a href="#about" onClick={(e) => { e.preventDefault(); scrollWithOffset("#about"); }}>О себе</a>
                 <a href="#skills" onClick={(e) => { e.preventDefault(); scrollWithOffset("#skills"); }}>Навыки</a>
-                <a href="#projects" onClick={(e) => { e.preventDefault(); scrollWithOffset("#projects"); }}>Проекты</a>
+                <a href="#projects" onClick={(e) => { e.preventDefault(); scrollWithOffset("#projects"); }}>Успехи</a>
                 <a href="#contacts" onClick={(e) => { e.preventDefault(); scrollWithOffset("#contacts"); }}>Контакты</a>
             </nav>
         </header>

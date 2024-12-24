@@ -15,21 +15,27 @@ body {
 /* Основные стили для футера */
 .footer {
     padding: 20px;
-    color: #000;
+    color: #630000;
     text-align: center;
-    border-top: 2px solid #000;
+    border-top: 2px solid #630000;
     font-size: 0.9rem;
     margin-top: 40px;
 }
 
 /* Ссылки в футере */
-.footer a {
+footer nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     color: #630000;
     text-decoration: none;
-    transition: color 0.3s;
+    text-align: center;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+    border: 1px solid transparent;
 }
 
-/* Эффект наведения на ссылки */
-.footer a:hover {
-    color: #003f66;
+footer nav a:hover {
+    color: var(--background-color);
+    background-color: #630000;
 }

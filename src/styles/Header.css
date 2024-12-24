@@ -32,10 +32,10 @@ header nav {
 }
 
 header nav a {
-    font-size: 1rem;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: black;
+    color: rgb(51, 51, 51);
     text-decoration: none;
     text-align: center;
     padding: 5px 10px;
