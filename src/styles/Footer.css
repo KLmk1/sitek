@@ -39,3 +39,7 @@ footer nav a:hover {
     color: var(--background-color);
     background-color: #630000;
 }
+
+.footer-link {
+    color: #630000 !important;
+}
