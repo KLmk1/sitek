@@ -2,22 +2,23 @@
 
 
 .main-content {
-    padding: 20px;
+    padding: 40px;
     background-color: #ffffff00;
-    color: #000;
+    color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
 /* Общие стили для всех секций */
 .section {
     margin-bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.842);
+    background: rgb(0,10,185);
+    background: linear-gradient(200deg, rgba(0,10,185,0.6474964985994398) 0%, rgba(207,0,0,0.6951155462184874) 100%);
 }
 
 /* Заголовки в секциях */
 .section h2 {
     font-size: 1.8rem;
-    color: #000;
+    color: #ffffff;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
@@ -26,7 +27,7 @@
 .section p {
     font-size: 1.1rem;
     line-height: 1.5;
-    color: #000000;
+    color: #ffffff;
     
     font-size: 1rem;
     letter-spacing: 0.4px;
@@ -57,14 +58,17 @@
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 8px;
-    border: solid 1px rgba(197, 197, 197, 0.473);
+    border: 3px solid  rgba(255, 255, 255, 0.473);
+    -webkit-box-shadow: 20px -18px 12px -4px rgba(255,0,0,0.55);
+    -moz-box-shadow: 20px -18px 12px -4px rgba(255,0,0,0.55);
+    box-shadow: 20px -18px 12px -4px rgba(255,0,0,0.55);
 }
 
 a {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
     padding: 5px 10px;
