@@ -4,7 +4,9 @@ const MainContent = () => {
     return (
         <main className="main-content">
             <section id="about" className="section">
+
                 <h2>О себе</h2>
+                <img src="code.jpeg" alt="code"/>
                 <p>
                     Привет! Меня зовут Клим, я начинающий разработчик, увлекаюсь веб-разработкой и программированием. На момент написания сайта мне 15 лет, учусь
                     в МБОУ ГЮЛ N86 города Ижевска.
@@ -13,9 +15,9 @@ const MainContent = () => {
 
             <section id="skills" className="section">
                 <h2>Навыки</h2>
-                <p className="subt">JavaScript:</p> <p>Web deveplopment (framework - React+Vite)</p> 
-                <p className="subt">Python:</p> <p>ML engineering, AI development</p>
-                <p className="subt">C++:</p> <p>Competitive programming</p>
+                <p className="skillstext"><img src="js.webp" className="language"  alt="JavaScript"/>  Frontend deveplopment (framework - React+Vite)</p> 
+                <p className="skillstext"><img src="python.png" className="language" alt="Python"/>ML engineering, AI development</p>
+                <p className="skillstext"><img src="C++.png" className="language"  alt="C++"/>Competitive programming</p>
             </section>
 
             <section id="projects" className="section">
@@ -60,9 +62,9 @@ const MainContent = () => {
             </section>
 
             <section id="contacts" className="section">
-                <h2>Дополнительная информация</h2>
-                <p className="subt"><a href="https://t.me/klimovskee">Telegram channel</a></p>
-                <p className="subt"><a href="https://www.twitch.tv/kl1movski">Twitch</a></p>
+                <h2>Доп. информация</h2>
+                <p><a href="https://t.me/klimovskee">Telegram channel</a></p>
+                <p><a href="https://www.twitch.tv/kl1movski">Twitch</a></p>
                 <p>Email : klimakarov@gmail.com</p>
             </section>
         </main>

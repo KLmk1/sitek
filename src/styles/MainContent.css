@@ -13,15 +13,25 @@
     margin-bottom: 40px;
     background: rgb(0,10,185);
     background: linear-gradient(200deg, rgba(0,10,185,0.6474964985994398) 0%, rgba(207,0,0,0.6951155462184874) 100%);
+    
 }
 
 /* Заголовки в секциях */
 .section h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     color: #ffffff;
     padding-bottom: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+
+.section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 /* Параграфы в секциях */
 .section p {
@@ -29,8 +39,10 @@
     line-height: 1.5;
     color: #ffffff;
     
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 0.4px;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 /* Стили для списка навыков */
@@ -59,16 +71,16 @@
     padding: 20px;
     border-radius: 8px;
     border: 3px solid  rgba(255, 255, 255, 0.473);
-    -webkit-box-shadow: 20px -18px 12px -4px rgba(255,0,0,0.55);
-    -moz-box-shadow: 20px -18px 12px -4px rgba(255,0,0,0.55);
-    box-shadow: 20px -18px 12px -4px rgba(255,0,0,0.55);
+    background: rgb(210,0,0);
+    background: linear-gradient(348deg, rgba(210,0,0,0.6474964985994398) 0%, rgba(64,0,201,0.6951155462184874) 100%);
+
 }
 
 a {
-    font-size: 1rem;
+    font-size: 1.1rem !important;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: rgb(255, 255, 255);
+    color: rgb(67, 217, 255);
     text-decoration: none;
     text-align: center;
     padding: 5px 10px;
@@ -84,5 +96,17 @@ a:hover {
 
 .subt {
     font-weight: 500 !important;
-    font-size: 1.25rem !important;
+    font-size: 2rem !important;
+}
+
+.language {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 48px;
+    width: auto !important;
+}
+
+.skillstext {
+    text-align: center;
 }
