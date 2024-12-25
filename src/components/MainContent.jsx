@@ -1,6 +1,56 @@
 import "../styles/MainContent.css";
+import confetti from "canvas-confetti";
+import { useEffect } from "react";
 
 const MainContent = () => {
+    
+    const launchConfetti = () => {
+        confetti({
+            particleCount: 150,
+            spread: 360,
+            origin: {
+                x: Math.random(), // Случайное место по X
+                y: Math.random() * 0.5 + 0.3, // Случайное место по Y (не выше середины)
+            },
+        });
+        
+        confetti({
+            particleCount: 150,
+            spread: 360,
+            origin: {
+                x: Math.random(), // Случайное место по X
+                y: Math.random() * 0.5 + 0.3, // Случайное место по Y (не выше середины)
+            },
+        });
+        confetti({
+            particleCount: 150,
+            spread: 360,
+            origin: {
+                x: Math.random(), // Случайное место по X
+                y: Math.random() * 0.5 + 0.3, // Случайное место по Y (не выше середины)
+            },
+        });
+    };
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            },
+            { threshold: 0.1 } // Секция считается видимой, если 10% ее на экране
+        );
+
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect(); // Очистка
+    }, []);
+
+    
     return (
         <main className="main-content">
             <section id="about" className="section">
@@ -20,7 +70,8 @@ const MainContent = () => {
                 <p className="skillstext"><img src="C++.png" className="language"  alt="C++"/>Competitive programming</p>
             </section>
 
-            <section id="projects" className="section">
+            <section id="projects"
+    onMouseEnter={launchConfetti} className="section">
                 <h2>Успехи</h2>
                 <p className="subt">Пройденные очные курсы:</p>
                 <p>
