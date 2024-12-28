@@ -116,6 +116,7 @@ const MainContent = () => {
                 <p><a href="https://t.me/klimovskee">Telegram channel</a></p>
                 <p><a href="https://www.twitch.tv/kl1movski">Twitch</a></p>
                 <p>Email : klimakarov@gmail.com</p>
+                <p>Discord : .ashaq</p>
             </section>
         </main>
     );
