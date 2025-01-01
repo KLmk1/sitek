@@ -6,10 +6,12 @@
 }
 
 header {
-    display: flex;
+    display: block;
+    text-align: center;
+    position: relative;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0;
     background-color: var(--background-color);
     box-shadow: 1px 3px 10px var(--shadow-color);
     position: sticky;
@@ -27,8 +29,11 @@ header h1 {
 
 /* Навигация - горизонтально по умолчанию */
 header nav {
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
     display: flex;
-    gap: 15px; /* Расстояние между ссылками */
+    gap: 5vw; /* Расстояние между ссылками */
+    justify-content: center;
 }
 
 header nav a {
@@ -43,9 +48,10 @@ header nav a {
     border: 1px solid transparent;
 }
 
+
 header nav a:hover {
     color: var(--background-color);
-    background-color: var(--hover-color);
+    background-color: black;
 }
 
 /* Адаптивность - таблица при уменьшении экрана */
@@ -53,7 +59,7 @@ header nav a:hover {
     header {
         flex-direction: column; /* Логотип сверху, ссылки снизу */
         align-items: center;
-        padding: 15px;
+        padding: 5px;
 
         position: static; /* Положение становится обычным */
     }
@@ -64,10 +70,11 @@ header nav a:hover {
 
     header nav {
         display: grid; /* Переход на таблицу */
-        grid-template-columns: repeat(2, 1fr); /* Две колонки */
+        grid-template-columns: repeat(4, 1fr); /* Две колонки */
         gap: 10px;
         width: 100%; /* Чтобы ссылки выровнялись */
         justify-content: center;
+        border: none;
     }
 
     header nav a {
@@ -82,4 +89,13 @@ header nav a:hover {
     header nav {
         grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
     }
+}
+
+
+.logotext {
+    height: 50px;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
 }

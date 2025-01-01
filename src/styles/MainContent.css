@@ -2,22 +2,12 @@
 
 
 .main-content {
-    padding: 40px;
     background-color: #ffffff00;
     color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
 /* Общие стили для всех секций */
-.section {
-    margin-bottom: 40px;
-    background: rgb(0,10,185);
-    background: linear-gradient(200deg, rgba(0,10,185,0.6474964985994398) 0%, rgba(207,0,0,0.6951155462184874) 100%);
-    opacity: 0; /* Скрыто изначально */
-    transform: translateY(50px); /* Сдвиг вниз */
-    transition: opacity 1s ease-out, transform 1s ease-out;
-    
-}
 
 .section.visible {
     opacity: 1; /* Полностью видимо */
@@ -35,9 +25,38 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+.section1 h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
 .section img {
     width: 100%;
     border-radius: 10px;
+}
+
+.section1 img {
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.section1 .content {
+    display: flex;
+    align-items: center; /* Центрирование элементов по вертикали */
+    gap: 20px; /* Расстояние между картинкой и текстом */
+}
+
+.section1 img {
+    width: 50%; /* Установите подходящий размер изображения */
+    height: auto; /* Сохранение пропорций */
+    border-radius: 8px; /* Закругление углов изображения */
 }
 
 
@@ -53,34 +72,38 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
-/* Стили для списка навыков */
-.section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.section ul li {
-    font-size: 1rem;
-    color: #333;
-    padding-left: 20px;
-    position: relative;
-}
-
-.section ul li::before {
-    content: "-";
-    position: absolute;
-    left: 0;
-    color: #000000; /* Цвет маркера */
+.section1 p {
+    display: flex;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #ffffff;
+    
+    font-size: 1.5rem;
+    letter-spacing: 0.4px;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 /* Добавление мягкого теневого эффекта для улучшения визуального восприятия */
 .section {
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0; /* Скрыто изначально */
+    transform: translateY(50px); /* Сдвиг вниз */
+    transition: opacity 1s ease-out, transform 1s ease-out;
     box-shadow: 0 8px 30px rgba(0, 4, 255, 0.377);
     padding: 20px;
-    border-radius: 8px;
-    border: 3px solid  rgba(255, 255, 255, 0.473);
-    background: rgb(210,0,0);
-    background: linear-gradient(348deg, rgba(210,0,0,0.6474964985994398) 0%, rgba(64,0,201,0.6951155462184874) 100%);
+    background: rgb(0,37,153);
+    background: radial-gradient(circle, rgba(0,37,153,0.7539390756302521) 0%, rgba(23,0,74,0.8855917366946778) 100%);
+}
+
+.section1 {
+    text-align: center;
+    background: rgb(36,153,0);
+    background: radial-gradient(circle, rgba(36,153,0,0.7539390756302521) 0%, rgba(25,74,0,0.8855917366946778) 100%);
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0;
 }
 
 a {
@@ -157,6 +180,21 @@ a:hover {
     }
 
     .section {
+        border-radius: 8px;
+        border: 3px solid  rgba(255, 255, 255, 0.473);
+    }
+
+    .section1 {
+        border-radius: 8px;
+        border: 3px solid  rgba(255, 255, 255, 0.473);
+    }
+
+    .section {
+        margin-bottom: 20px;
+        padding: 15px;
+        transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+    .section1 {
         margin-bottom: 20px;
         padding: 15px;
         transition: opacity 0.7s ease-out, transform 0.7s ease-out;
@@ -166,11 +204,31 @@ a:hover {
         font-size: 2rem;
     }
 
+    .section1 h2 {
+        font-size: 2rem;
+    }
+
     .section p, a {
+        font-size: 1rem;
+    }
+
+    .section1 p, a {
         font-size: 1rem;
     }
 
     .skillstext, .subt {
         font-size: 1.5rem !important;
+    }
+
+    .section1 .content {
+        display: block;
+    }
+
+    .section img {
+        width: 100%;
+    }
+
+    .section1 img {
+        width: 100%;
     }
 }

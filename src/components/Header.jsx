@@ -13,7 +13,7 @@ const scrollWithOffset = (id) => {
 const Header = () => {
     return (
         <header className="header">
-            <h1 className="logo">Klimovskeei</h1>
+            <img src="logotext.png" alt="logo"  className="logotext" />
             <nav className="navigation">
                 <a href="#about" onClick={(e) => { e.preventDefault(); scrollWithOffset("#about"); }}>О себе</a>
                 <a href="#skills" onClick={(e) => { e.preventDefault(); scrollWithOffset("#skills"); }}>Навыки</a>

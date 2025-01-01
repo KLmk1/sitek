@@ -53,16 +53,18 @@ const MainContent = () => {
     
     return (
         <main className="main-content">
-            <section id="about" className="section">
-
-                <h2>О себе</h2>
-                <img src="code.jpeg" alt="code"/>
-                <p>
-                    Привет! Меня зовут Клим, я начинающий разработчик, увлекаюсь веб-разработкой и программированием. На момент написания сайта мне 15 лет, учусь
-                    в МБОУ ГЮЛ N86 города Ижевска.
-                </p>
-            </section>
-
+            <div className="about-container">
+                <section id="about" className="section1">
+                    <h2>О себе</h2>
+                    <div className="content">
+                        <img src="code.jpeg" alt="code" />
+                        <p>
+                            Привет! Меня зовут Клим, я начинающий разработчик, увлекаюсь веб-разработкой и программированием. На момент написания сайта мне 15 лет, учусь
+                            в МБОУ ГЮЛ N86 города Ижевска.
+                        </p>
+                    </div>
+                </section>
+            </div>
             <section id="skills" className="section">
                 <h2>Навыки</h2>
                 <p className="skillstext"><img src="js.webp" className="language"  alt="JavaScript"/>  Frontend deveplopment (framework - React+Vite)</p> 
@@ -71,7 +73,7 @@ const MainContent = () => {
             </section>
 
             <section id="projects"
-    onMouseEnter={launchConfetti} className="section">
+    onMouseEnter={launchConfetti} className="section1">
                 <h2>Успехи</h2>
                 <p className="subt">Пройденные очные курсы:</p>
                 <p>
